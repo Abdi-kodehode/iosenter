@@ -52,9 +52,9 @@ const PrayerTime = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center py-20 px-4">
+    <div className="flex flex-col items-center py-10 px-8 border-2 border-rose-500">
       <h1 className="text-2xl font-bold mb-4">Prayer Time</h1>
-      <div className="w-full max-w-sm">
+      <div className="w-full">
         <table className="w-full text-left table-collapse">
           <thead>
             <tr>

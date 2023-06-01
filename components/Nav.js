@@ -7,7 +7,7 @@ const Nav = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 text-black-300 font-semibold ">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 text-black-300 font-semibold bg-white ">
       <div className='italic text-2xl'>
         <Link href="/">
           <h3>Islamsk Opplæringssenter</h3>   
