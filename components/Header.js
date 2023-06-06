@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <div className="w-full h-screen flex flex-col justify-between bg-[url('/arc.jpg')] py-20">
+    <div className="w-full h-full flex flex-col justify-between bg-[url('/arc.jpg')] py-20">
       <div className="grid md:grid-cols-2 max-w-[1240px] m-auto">
         <div className="flex flex-col justify-center md:items-start w-full px-2 py-8">
           {/* <p className="text-2xl">Advanced security</p> */}

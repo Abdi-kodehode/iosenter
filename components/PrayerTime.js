@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { prayerTime } from '@/pages/api/times/prayer_times';
+import { prayerTime } from '@/times/prayer_times';
 
 const PrayerTime = () => {
   const [currentTime, setCurrentTime] = useState(new Date());
@@ -34,6 +34,7 @@ const PrayerTime = () => {
       currentTime.toLocaleTimeString()
     );
 
+    // Kjører en for loop her igjennom "dagens" array for å finne riktig bønn
     for (const prayer of prayerTimes) {
       if (currentTimeInMinutes < convertToMinutes(prayerData[prayer])) {
         return prayer;
@@ -43,6 +44,7 @@ const PrayerTime = () => {
     return null;
   };
 
+  // Bruker useMemo fordi kalkulasjonen skjer en gang om dagen 
   const convertToMinutes = useMemo(() => {
     const memoizedConvertToMinutes = (time) => {
       const [hours, minutes] = time.split(':');
