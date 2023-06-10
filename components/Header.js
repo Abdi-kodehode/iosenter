@@ -14,7 +14,7 @@ const Header = () => {
             do pariatur occaecat minim excepteur nisi et reprehenderit aute
             consequat exercitation id. Deserunt cupidatat aute commodo officia.
           </p>
-          <button className="py-3 px-6 sm:w-[60%] my-4 text-white border bg-sky-500 border-sky-500 hover:bg-transparent hover:text-sky-500 rounded-md">
+          <button className="py-3 px-6 sm:w-[60%] my-4 text-white border bg-blue-500 border-blue-500 hover:bg-transparent hover:text-blue-500 rounded-md">
             Get Started
           </button>
         </div>

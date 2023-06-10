@@ -54,14 +54,14 @@ const PrayerTime = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center py-10 px-8 border-2 border-rose-500">
+    <div className="flex flex-col items-center py-10 px-8 border-8 border-blue-500 rounded-lg">
       <h1 className="text-2xl font-bold mb-4">Prayer Time</h1>
       <div className="w-full">
         <table className="w-full text-left table-collapse">
           <thead>
             <tr>
-              <th className="text-xs font-medium p-2 bg-gray-200">Name</th>
-              <th className="text-xs font-medium p-2 bg-gray-200">Time</th>
+              <th className="text-am font-bold p-2 bg-blue-200">Bønn</th>
+              <th className="text-am font-bold p-2 bg-blue-200">Tid</th>
             </tr>
           </thead>
           <tbody>
@@ -76,8 +76,8 @@ const PrayerTime = () => {
                 <tr
                   key={index}
                   className={`${
-                    isNext ? 'bg-gray-300' : ''
-                  } p-4 hover:bg-gray-400`}
+                    isNext ? 'bg-blue-300' : ''
+                  } p-4 hover:bg-blue-400`}
                 >
                   <td className="font-bold">{key}</td>
                   <td>{value}</td>
